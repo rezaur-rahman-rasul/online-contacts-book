@@ -4,6 +4,7 @@ import grails.web.servlet.mvc.GrailsParameterMap
 import org.springframework.validation.BindingResult
 
 class MemberService {
+
     def save(GrailsParameterMap params) {
         Member member = new Member(params)
         def response = AppUtil.saveResponse(false, member)
